@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+    <h1>Form Pendaftaran</h1>
+    <form id="myForm" method="POST" action="">
+      <!-- Fahri Ahmad Hambali  -->
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" name="email" required />
+      </div>
+      <br />
+
+      <!-- Rafa Bagasatria Ishartanto -->
+      <div>
+        <label for="nama">Nama:</label>
+        <br />
+        <input type="text" id="nama" name="nama" required />
+      </div>
+      <br />
+
+      <!-- M.Aditya Ilham -->
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" id="password" name="password" required />
+      </div>
+      <br />
+
+      <!-- Muhammad Ilham Ghazali -->
+      <div>
+        <label>Tanggal Lahir:</label> <br />
+        <input type="date" name="tanggal" />
+      </div>
+      <br />
+
+      <!-- Akhmad Riza Omar -->
+      <div>
+        <label for="jenislk">Jenis Kelamin</label>
+        <br />
+        <label
+          ><input type="radio" name="jenis_kelamin" value="laki-laki" />
+          Laki-laki</label
+        >
+        <label
+          ><input type="radio" name="jenis_kelamin" value="perempuan" />
+          Perempuan</label
+        >
+      </div>
+      <br />
+
+      <!-- Muhamad Surya Pratama -->
+      <div>
+        <label>Agama:</label>
+        <select name="agama">
+          <option value="islam">Islam</option>
+          <option value="kristen">Kristen</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Budha</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- M. Mirza Armansyah -->
+      <div>
+        <label for="kelas">Pilih Kelas:</label>
+        <br />
+        <select id="kelas" name="kelas" required>
+          <option value="">-- Pilih Kelas --</option>
+          <option value="kelasA">Kelas A</option>
+          <option value="kelasB">Kelas B</option>
+          <option value="kelasC">Kelas C</option>
+        </select>
+      </div>
+      <br />
+
+      <!-- Rio Darmawan -->
+      <button type="submit">Daftar</button>
+      <button type="button" onclick="clearForm()">Bersihkan</button>
+    </form>
+
+    <script>
+      function clearForm() {
+        document.getElementById("myForm").reset();
+      }
+    </script>
+  </body>
+</html>
